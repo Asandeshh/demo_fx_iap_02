@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="440.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="me.itsmeeamith.demofx.LoadViewController">
+   <children>
+      <Label layoutX="227.0" text="Load Viewer">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="27.0" layoutY="99.0" prefHeight="327.0" prefWidth="590.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Id" />
+          <TableColumn prefWidth="116.0" text="Brand" />
+            <TableColumn prefWidth="180.0" text="Model" />
+            <TableColumn prefWidth="84.0" text="Gears" />
+            <TableColumn prefWidth="118.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="503.0" layoutY="58.0" mnemonicParsing="false" onAction="#btnLoad" prefHeight="36.0" prefWidth="106.0" style="-fx-background-color: lime;" text="Load">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
